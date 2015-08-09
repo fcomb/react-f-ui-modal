@@ -14,7 +14,7 @@
     "prepublish": "npm run clean && npm run test && npm run build",
     "deploy:git-push": "git push origin master",
     "deploy:ghpages": "$(npm bin)/gh-pages -d example/dist",
-    "deploy": "npm run deploy:git-push && npm run deploy:ghpages"
+    "deploy": "npm run build:example && npm run deploy:git-push && npm run deploy:ghpages"
   },
   "repository": {
     "type": "git",
