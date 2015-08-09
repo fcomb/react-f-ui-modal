@@ -1,0 +1,46 @@
+{
+  "name": "react-f-ui-modal",
+  "version": "1.0.0",
+  "description": "<UI.Modal {...props} />",
+  "main": "build/modal.js",
+  "scripts": {
+    "clean": "$(npm bin)/rimraf build",
+    "lint": "$(npm bin)/eslint --ext .jsx --ext .js src",
+    "build:jsx": "$(npm bin)/babel src --out-dir build",
+    "build:scss": "$(npm bin)/node-sass styles/modal.scss styles/modal.css",
+    "build:example": "$(npm bin)/webpack -p --config example/webpack.config.js",
+    "build:ghpages": "$(npm bin)/gh-pages -d example/dist",
+    "build": "npm run build:jsx && npm run build:scss && npm run build:example",
+    "test": "npm run lint",
+    "prepublish": "npm run clean && npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcomb/react-f-ui-modal.git"
+  },
+  "keywords": [
+    "react",
+    "modal",
+    "react-modal"
+  ],
+  "author": "Eugene Rodionov (https://github.com/theaqua)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fcomb/react-f-ui-modal/issues"
+  },
+  "homepage": "https://github.com/fcomb/react-f-ui-modal#readme",
+  "dependencies": {
+    "classnames": "^2.1.3",
+    "react": "^0.13.3",
+    "react-motion": "^0.2.7"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babel-eslint": "^4.0.5",
+    "eslint": "^1.1.0",
+    "eslint-config-airbnb": "0.0.7",
+    "eslint-plugin-react": "^3.2.1",
+    "gh-pages": "^0.3.1",
+    "node-sass": "^3.2.0"
+  }
+}

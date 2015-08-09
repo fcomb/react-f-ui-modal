@@ -1,0 +1,31 @@
+{
+  "name": "react-f-ui-modal-example",
+  "version": "1.0.0",
+  "main": "webpack.server.js",
+  "scripts": {
+    "start": "node webpack.server.js",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fcomb/react-f-ui-modal.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fcomb/react-f-ui-modal/issues"
+  },
+  "homepage": "https://github.com/fcomb/react-f-ui-modal",
+  "dependencies": {
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "babel-core": "^5.6.18",
+    "babel-loader": "^5.1.4",
+    "react-hot-loader": "^1.2.7",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.9.0",
+    "sass-loader": "^2.0.0",
+    "style-loader": "^0.12.3",
+    "css-loader": "^0.15.6"
+  }
+}

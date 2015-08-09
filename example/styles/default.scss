@@ -1,0 +1,48 @@
+html,
+body,
+.app {
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333333;
+  line-height: 1.42857;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.button-cta {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 200;
+  background: #E91E63;
+  color: #fff;
+  padding: 2rem;
+  border: 1px solid #E91E63;
+  line-height: 1;
+
+  &:hover {
+    cursor: poiner;
+  }
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}
