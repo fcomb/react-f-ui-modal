@@ -20,29 +20,19 @@ import 'react-f-ui-modal/styles/modal';
 ```
 
 ### Props
-```
-active: bool.isRequired
-```
+#### active (bool.isRequired)
 State of modal.
 
-```
-closeOnOuterClick: bool
-```
+#### closeOnOuterClick (bool)
 Close if click outside content?
 
-```
-className: string
-```
+#### className (string)
 Additional className, default is `f-modal`.
 
-```
-children: node
-```
+#### children (node)
 Body of modal.
 
-```
-onClose: func,
-```
+#### onClose (func)
 Handler.
 
 ### Example
