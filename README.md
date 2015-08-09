@@ -1,5 +1,5 @@
-# react-f-ui-modal
-## Modal for React, part of fcomb-UI
+# Modal component for React
+[![Build Status](https://travis-ci.org/fcomb/react-f-ui-modal.svg?branch=master)](https://travis-ci.org/fcomb/react-f-ui-modal)
 
 ### Features
 * full control of content
