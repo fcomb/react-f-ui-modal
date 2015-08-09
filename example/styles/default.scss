@@ -20,11 +20,34 @@ h3 {
   font-weight: 400;
 }
 
+.header-title {
+  font-family: inherit;
+  font-size: 3rem;
+  font-weight: 200;
+
+  &-link {
+    color: #1E88E5;
+    border-bottom: 1px solid #90CAF9;
+    text-decoration: none;
+    transition: color, border-bottom-color .3s;
+
+    &:hover,
+    &:visited {
+      color: #3F51B5;
+      border-bottom-color: #9FA8DA;
+    }
+  }
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+
+  &-modal {
+    display: block;
+  }
 }
 
 .button-cta {
