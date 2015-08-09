@@ -1,10 +1,11 @@
 var webpack = require('webpack');
+var path = require('path');
 var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
+var config = require('./webpack.config.dev');
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
-  contentBase: './dist',
+  contentBase: path.join(__dirname, 'dist'),
   hot: true,
   historyApiFallback: true,
   stats: {
