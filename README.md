@@ -1,4 +1,6 @@
 # react-f-ui-modal
+## Modal for React, part of fcomb-UI
+
 ### Features
 * full control of content
 * outer click closes modal

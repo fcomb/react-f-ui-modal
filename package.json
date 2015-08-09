@@ -1,7 +1,7 @@
 {
   "name": "react-f-ui-modal",
-  "version": "1.0.1",
-  "description": "<UI.Modal {...props} />",
+  "version": "1.0.2",
+  "description": "Modal for React, part of fcomb-UI",
   "main": "build/modal.js",
   "scripts": {
     "test": "npm run lint",
