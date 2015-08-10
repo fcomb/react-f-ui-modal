@@ -1,5 +1,5 @@
 import React from 'react';
-import ExampleModal from 'components/modal';
+import ExampleModal from 'components/modals/example';
 
 import 'styles/default';
 
