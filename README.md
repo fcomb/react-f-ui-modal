@@ -79,7 +79,7 @@
 5. And then include with children which toggles modal
 
         import React from 'react';
-        import ExampleModal from 'components/modal';
+        import ExampleModal from 'components/modal/example';
 
         React.render((
           <ExampleModal>
