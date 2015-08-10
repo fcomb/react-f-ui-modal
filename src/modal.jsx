@@ -8,7 +8,7 @@ class Modal extends Component {
     closeOnOuterClick: PropTypes.bool,
     className: PropTypes.string,
     children: PropTypes.node,
-    onClose: PropTypes.func,
+    onClose: PropTypes.func.isRequired,
   }
 
   constructor(props) {

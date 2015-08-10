@@ -36,7 +36,7 @@ var Modal = (function (_Component) {
       closeOnOuterClick: _react.PropTypes.bool,
       className: _react.PropTypes.string,
       children: _react.PropTypes.node,
-      onClose: _react.PropTypes.func
+      onClose: _react.PropTypes.func.isRequired
     },
     enumerable: true
   }]);

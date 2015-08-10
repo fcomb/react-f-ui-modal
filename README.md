@@ -97,7 +97,7 @@ Additional className, default is `f-modal`.
 #### children (node)
 Body of modal.
 
-#### onClose (func)
+#### onClose (func.isRequired)
 Handler of close modal.
 
 #### closeOnOuterClick (bool)
