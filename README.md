@@ -17,17 +17,17 @@
 
 ### Usage
 1. Include component
-```
-import Modal from 'react-f-ui-modal';
-```
+
+        import Modal from 'react-f-ui-modal';
+
 2. Import SCSS or CSS
-```
-@import "node_modules/react-f-ui-modal/styles/modal"
-```
+
+        @import "node_modules/react-f-ui-modal/styles/modal"
+
 3. Or import directly with webpack's [css-loader](https://github.com/webpack/css-loader)/[sass-loader](https://github.com/jtangelder/sass-loader)
-```
-import 'react-f-ui-modal/styles/modal';
-```
+
+        import 'react-f-ui-modal/styles/modal';
+
 4. Make basic modal **(warning: it's stage 0 in babel)**
 
         import React, { Component, PropTypes } from 'react';
