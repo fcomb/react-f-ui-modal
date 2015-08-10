@@ -14,8 +14,8 @@ class ExampleModal extends Component {
     super();
 
     this.state = {
-      isOpen: false
-    }
+      isOpen: false,
+    };
   }
 
   render() {

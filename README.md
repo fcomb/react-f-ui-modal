@@ -16,17 +16,80 @@
 `npm i --save react-f-ui-modal`
 
 ### Usage
+1. Include component
 ```
 import Modal from 'react-f-ui-modal';
+```
+2. Import SCSS or CSS
+```
+@import "node_modules/react-f-ui-modal/styles/modal"
+```
+3. Or import directly with webpack's [css-loader](https://github.com/webpack/css-loader)/[sass-loader](https://github.com/jtangelder/sass-loader)
+```
 import 'react-f-ui-modal/styles/modal';
 ```
+4. Make basic modal **(warning: it's stage 0 in babel)**
+
+        import React, { Component, PropTypes } from 'react';
+        import Modal from 'react-f-ui-modal';
+
+        class ExampleModal extends Component {
+          static propTypes = {
+            children: PropTypes.node.isRequired,
+            handleClose: PropTypes.func,
+          }
+
+          constructor() {
+            super();
+
+            this.state = {
+              isOpen: false
+            }
+          }
+
+          render() {
+            return (
+              <span {...this.props}>
+                <span onClick={::this.toggleModal}>{this.props.children}</span>
+
+                <Modal active={this.state.isOpen} onClose={::this.toggleModal} closeOnOuterClick>
+                  <div className="f-modal-header text-center">
+                    <h3 className="f-modal-header-title">Modal header</h3>
+                    <button type="reset" className="f-modal-close" onClick={::this.toggleModal}>&times;</button>
+                  </div>
+                  <div className="f-modal-body">
+                    Basic modal
+                  </div>
+                </Modal>
+              </span>
+            );
+          }
+
+          toggleModal() {
+            this.setState({ isOpen: !this.state.isOpen }, () => {
+              if (this.props.handleClose) {
+                this.props.handleClose(this.state);
+              }
+            });
+          }
+        }
+
+        export default ExampleModal;
+
+5. And then include with children which toggles modal
+
+        import React from 'react';
+        import ExampleModal from 'components/modal';
+
+        React.render((
+          <ExampleModal>
+            <button>Launch example modal</button>
+          </ExampleModal>
+        ), document.getElementById('app'));
 
 ### Props
 #### active (bool.isRequired)
 State of modal.
-
-#### closeOnOuterClick (bool)
-Close if click outside content?
 
 #### className (string)
 Additional className, default is `f-modal`.
@@ -35,7 +98,10 @@ Additional className, default is `f-modal`.
 Body of modal.
 
 #### onClose (func)
-Handler.
+Handler of close modal.
+
+#### closeOnOuterClick (bool)
+Close if click outside content?
 
 ### Example
 * [Demo](http://fcomb.github.io/react-f-ui-modal/)
