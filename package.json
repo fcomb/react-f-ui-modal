@@ -1,6 +1,6 @@
 {
   "name": "react-f-ui-modal",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Modal component for React",
   "main": "build/modal.js",
   "scripts": {
@@ -23,7 +23,8 @@
   "keywords": [
     "react",
     "modal",
-    "react-modal"
+    "react-modal",
+    "react-component"
   ],
   "author": "Eugene Rodionov (https://github.com/theaqua)",
   "license": "MIT",
