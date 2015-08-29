@@ -43,8 +43,16 @@
             super();
 
             this.state = {
-              isOpen: false
-            }
+              isOpen: false,
+            };
+          }
+
+          toggleModal() {
+            this.setState({ isOpen: !this.state.isOpen }, () => {
+              if (this.props.handleClose) {
+                this.props.handleClose(this.state);
+              }
+            });
           }
 
           render() {
@@ -63,14 +71,6 @@
                 </Modal>
               </span>
             );
-          }
-
-          toggleModal() {
-            this.setState({ isOpen: !this.state.isOpen }, () => {
-              if (this.props.handleClose) {
-                this.props.handleClose(this.state);
-              }
-            });
           }
         }
 
