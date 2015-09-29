@@ -69,6 +69,14 @@ var Modal = (function (_Component) {
       }
     }
   }, {
+    key: 'hideOnOuterClick',
+    value: function hideOnOuterClick(e) {
+      if (!this.props.closeOnOuterClick) return;
+      if (e.target.dataset.modal) {
+        this.props.onClose(e);
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this = this;
@@ -100,14 +108,6 @@ var Modal = (function (_Component) {
           );
         }
       );
-    }
-  }, {
-    key: 'hideOnOuterClick',
-    value: function hideOnOuterClick(e) {
-      if (!this.props.closeOnOuterClick) return;
-      if (e.target.dataset.modal) {
-        this.props.onClose(e);
-      }
     }
   }]);
 

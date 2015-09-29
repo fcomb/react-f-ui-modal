@@ -33,6 +33,13 @@ class Modal extends Component {
     }
   }
 
+  hideOnOuterClick(e) {
+    if (!this.props.closeOnOuterClick) return;
+    if (e.target.dataset.modal) {
+      this.props.onClose(e);
+    }
+  }
+
   render() {
     if (!this.props.active) {
       return false;
@@ -58,13 +65,6 @@ class Modal extends Component {
         }}
       </Spring>
     );
-  }
-
-  hideOnOuterClick(e) {
-    if (!this.props.closeOnOuterClick) return;
-    if (e.target.dataset.modal) {
-      this.props.onClose(e);
-    }
   }
 }
 
