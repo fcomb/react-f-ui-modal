@@ -1,6 +1,6 @@
 {
   "name": "react-f-ui-modal",
-  "version": "1.0.5",
+  "version": "2.0.1",
   "description": "Modal component for React",
   "main": "build/modal.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "build:jsx": "$(npm bin)/babel src --out-dir build",
     "build:scss": "$(npm bin)/node-sass styles/modal.scss styles/modal.css",
     "build:example": "$(npm bin)/webpack -p --config example/webpack.config.production.js",
-    "build": "npm run build:jsx && npm run build:scss && npm run build:example",
+    "build": "npm run build:jsx && npm run build:scss",
     "prepublish": "npm run clean && npm run test && npm run build",
     "deploy:git-push": "git push origin master",
     "deploy:ghpages": "$(npm bin)/gh-pages -d example/dist",
@@ -42,6 +42,7 @@
   "devDependencies": {
     "babel": "5.8.29",
     "babel-eslint": "4.1.3",
+    "babel-loader": "5.3.3",
     "eslint": "1.7.3",
     "eslint-config-airbnb": "0.1.0",
     "eslint-plugin-react": "3.6.3",

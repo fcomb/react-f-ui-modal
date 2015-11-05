@@ -32,11 +32,10 @@
     color: #fff;
     border: 0;
     line-height: 1;
-    transition: color 0.3s; }
+    transition: color .3s; }
     .f-modal-close:hover {
       color: #848484; }
-    .f-modal-close:active,
-    .f-modal-close:focus {
+    .f-modal-close:active, .f-modal-close:focus {
       outline: 0; }
   .f-modal-header {
     padding: 1.5rem 2rem;

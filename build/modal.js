@@ -82,7 +82,7 @@ var Modal = (function (_Component) {
       var _this = this;
 
       if (!this.props.active) {
-        return false;
+        return null;
       }
 
       var className = {
