@@ -42,7 +42,7 @@ class Modal extends Component {
 
   render() {
     if (!this.props.active) {
-      return false;
+      return null;
     }
 
     const className = {
