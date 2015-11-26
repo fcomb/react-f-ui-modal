@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/fcomb/react-f-ui-modal#readme",
   "dependencies": {
-    "classnames": "2.2.0",
+    "classnames": "2.2.1",
     "react-motion": "0.2.7"
   },
   "peerDependencies": {
